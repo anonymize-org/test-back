@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator nexus_prisma {
+  provider = "nexus-prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Movie {
+  id                Int      @id
+  budget            Int
+  original_language String
+  original_title    String
+  overview          String
+  popularity        Float
+  poster_path       String?
+  release_date      String
+  revenue           BigInt
+  runtime           Int?
+  status            String
+}

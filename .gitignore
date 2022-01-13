@@ -1,0 +1,14 @@
+node_modules/
+dist/
+src/generated/
+*.env*
+
+# Yarn Berry
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+.DS_Store
